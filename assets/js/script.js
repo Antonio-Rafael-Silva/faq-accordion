@@ -8,8 +8,7 @@ function toggleAnswer(questionId, answerId) {
         const isInactive = answer.classList.contains("inactive");
         answer.classList.toggle("inactive");
 
-        console.log(answerId);
-
+        question.setAttribute("aria-expanded", isInactive ? "true" : "false"); 
         img.src = isInactive ? "assets/img/icon-minus.svg" : "assets/img/icon-plus.svg";
 
     })
