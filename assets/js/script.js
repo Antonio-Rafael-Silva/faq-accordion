@@ -1,21 +1,18 @@
-function toggleAnswer(questionId, answerId) {
-    const question = document.getElementById(questionId);
-    const answer = document.getElementById(answerId);
-    const img = question.querySelector("img");
+const questions = document.querySelectorAll(".question");
 
+questions.forEach((question) => {
+  const answer = question.nextElementSibling;
+  const icon = question.querySelector("img");
 
-    question.addEventListener("click", () => {
-        const isInactive = answer.classList.contains("inactive");
-        answer.classList.toggle("inactive");
+  question.addEventListener("click", () => {
+    const isInactive = answer.classList.contains("inactive");
 
-        question.setAttribute("aria-expanded", isInactive ? "true" : "false"); 
-        img.src = isInactive ? "assets/img/icon-minus.svg" : "assets/img/icon-plus.svg";
+    question.setAttribute("aria-expanded", isInactive ? "true" : "false");
+    icon.src = isInactive
+      ? "assets/img/icon-minus.svg"
+      : "assets/img/icon-plus.svg";
 
-    })
-}
-
-toggleAnswer("question-01", "answer-01");
-toggleAnswer("question-02", "answer-02");
-toggleAnswer("question-03", "answer-03");
-toggleAnswer("question-04", "answer-04");
+    answer.classList.toggle("inactive");
+  });
+});
 
