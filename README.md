@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Links
 - Acesse a URL da solução [clicando aqui](https://github.com/Antonio-Rafael-Silva/faq-accordion)
-- Acesse o site do projeto [clicando aqui](https://antonio-rafael-silva.github.io/faq-accordion/)
+- Acesse o site do projeto [clicando aqui](https://antoniorafaeldev.github.io/faq-accordion/)
 
 ## Screenshot do resultado
 
